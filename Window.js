@@ -8,7 +8,7 @@ const defaultProps = {
   show: false
 };
 
-class Window extends BroswerWindow {
+class Window extends BrowserWindow {
   constructor({ file, ...windowSettings }) {
     super({ ...defaultProps, ...windowSettings });
 
