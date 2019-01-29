@@ -10,27 +10,27 @@ class DataStore extends Store {
     this.todos = this.get("todos") || [];
   }
 
-  saveTodos = () => {
+  saveTodos() {
     this.todos = this.set("todos", this.todos);
 
     //returning this allows method chaining
     return this;
-  };
+  }
 
-  getTodos = () => {
+  getTodos() {
     this.todos = this.get("todos") || [];
     return this;
-  };
+  }
 
-  addTodo = todo => {
+  addTodo(todo) {
     this.todos = [...this.todos, todo];
     return this.saveTodos();
-  };
+  }
 
-  deleteTodo = todo => {
+  deleteTodo(todo) {
     this.todos = this.todos.filter(t => t !== todo);
     return this.saveTodos();
-  };
+  }
 }
 
 module.exports = DataStore;

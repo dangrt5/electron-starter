@@ -20,6 +20,7 @@
     "electron": "^4.0.2"
   },
   "dependencies": {
+    "electron-reload": "^1.4.0",
     "electron-store": "^2.0.0"
   }
 }
